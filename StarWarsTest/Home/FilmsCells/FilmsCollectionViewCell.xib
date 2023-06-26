@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FilmsCollectionViewCell" customModule="StarWarsTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="297"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="297"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="FilmIdentifier" image="Film-image" translatesAutoresizingMaskIntoConstraints="NO" id="pdP-ot-GzO">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="249"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="190" id="4Bp-Fd-vEK"/>
+                            <constraint firstAttribute="height" constant="249" id="ciR-i0-ZXX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episodio 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkg-X9-Zjd">
+                        <rect key="frame" x="5" y="259" width="77" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Tuk-ba-YxJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Bkg-X9-Zjd" firstAttribute="top" secondItem="pdP-ot-GzO" secondAttribute="bottom" constant="10" id="6Uo-da-F2q"/>
+                <constraint firstItem="pdP-ot-GzO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ij9-5H-Fa1"/>
+                <constraint firstAttribute="trailing" secondItem="pdP-ot-GzO" secondAttribute="trailing" id="Wau-TY-FVL"/>
+                <constraint firstItem="Bkg-X9-Zjd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="cyV-9P-bad"/>
+                <constraint firstAttribute="bottom" secondItem="Bkg-X9-Zjd" secondAttribute="bottom" constant="20" id="dsK-2C-dCm"/>
+                <constraint firstItem="pdP-ot-GzO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="h59-on-7I6"/>
+            </constraints>
+            <size key="customSize" width="190" height="297"/>
+            <connections>
+                <outlet property="chapterImage" destination="pdP-ot-GzO" id="jZi-3x-Nln"/>
+                <outlet property="lblChapter" destination="Bkg-X9-Zjd" id="BU4-mW-S4e"/>
+            </connections>
+            <point key="canvasLocation" x="91.603053435114504" y="106.69014084507043"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Film-image" width="1026" height="1280"/>
+    </resources>
+</document>
